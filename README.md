@@ -1,3 +1,10 @@
+![uyh](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/d2d82225-3d14-47ef-80f1-ad763758ea0b)
+![palesa](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/5ccbc8ca-662b-4d60-884b-e9fa268d3d3e)
+![nhekeleng](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/2072bb6f-8bdc-4baa-9e57-914ab8bc30be)
+![mpho](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/f5eb21dd-f222-4d7a-95eb-984d7b4c9545)
+![logo](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/aa291dff-c725-4e05-a543-4941f16657df)
+![kani](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/f55e4ee3-4834-4d9b-8757-e85686b51bb7)
+![jhjk](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/99772ab3-ea48-4ca1-a03c-bc0e73c51edf)
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +28,8 @@
             </ul>
     	</nav>
        </div>
-<div class="logo">
+
+       <div class="logo">
 	   <img src="logo.jpg" alt="Hydra Balance Logo" id="logo">
        </div>    
 </header>
@@ -69,7 +77,9 @@
 
     function updateDisplayedImage() {
          var overlayImg = document.getElementById('overlay-img');
-         overlayImg.src = images[currentIndex] }
+         overlayImg.src = images[currentIndex];
+    }
+
     function openOverlay(imageSrc) {
          var overlay = document.getElementById('overlay');
          var overlayImg = document.getElementById('overlay-img');
@@ -88,6 +98,7 @@
 </script>
 </body>
 </html>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -241,14 +252,4 @@
     <p class="fooTer">hydrabalance266@yahoo.mail</p>
 </footer>
 </body>
-</html>![jhjk](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/e0045016-cd5f-4092-b650-82ed6c727933)
-![grery](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/85c0f04c-aa8f-4537-b1fe-662f4bac462b)
-![ffff](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/1c33f326-f48f-4f54-b1f4-4da88a079663)
-![er](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/532f7721-6593-4bb5-a311-330cbe66e442)
-![boity](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/2ec7525a-e1cf-4c54-b7c1-e7996cdd920c)
-![uyh](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/f7bf4293-ae89-4776-a66e-29671bb9bda0)
-![palesa](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/44ce2e07-088b-4130-8908-a2bceaf23dad)
-![nhekeleng](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/5cd23309-ca69-453d-8f2e-055977a12acc)
-![mpho](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/802c4b44-cea7-4054-bbab-489883615365)
-![logo](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/ea0abdae-7b3a-4557-9615-07f118a66a9c)
-![kani](https://github.com/HydraBalance/Hydra-Balance/assets/167212525/ad00c902-b0aa-4db6-b0ae-53213f945907)
+</html>
