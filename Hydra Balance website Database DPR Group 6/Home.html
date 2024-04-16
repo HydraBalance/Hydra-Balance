@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetic Store</title>
+    <link rel="stylesheet" href="home.css">
+</head>
+<body>
+    <header>
+       <div class="heading">
+	  <h1>Hydra Balance</h1>
+       </div>    	
+	
+       <div class="navigation">
+	 <nav>
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>			
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+    	</nav>
+       </div>
+
+       <div class="logo">
+	   <img src="logo.jpg" alt="Hydra Balance Logo" id="logo">
+       </div>    
+</header>
+<h2>Our Product</h2>
+<main id="products">    	
+	<div class="product">
+	    <img src="logo.jpg">
+	    <p>....more items to hit the store, soon</p>
+        </div>
+        <div class="product">
+            <div id="overlay" class="overlay" onclick="closeOverlay()">
+            <img id="overlay-img" src="" alt="Enlarged Image">
+            </div>
+	    <h3>Face Serum</h3>
+	    <p>The number one face wash in the L.</p>
+    	    <p class="price">M150.00</p>
+        </div>
+        <div class="product">
+	    <h3>Directions of use</h3>		
+	    <p>Apply gently on face with hands in a circular motion .</p>
+	    <p>Rinse face with warm water after application and wipe with damp towel.</p>
+	    <p>Most effective when used twice a day, morning and evening</p>
+        </div>   
+</main>
+<footer>
+    <p class="fooTer">&copy; 2024 Lotions Bar</p>
+    <p class="fooTer">hydrabalance266@yahoo.mail</p>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+<script>
+    var images = ["er.jpg", "uyh.jpg", "grery.jpg"];
+    var currentIndex = 0;
+    var interval;
+
+    function startSlideshow() {
+         interval = setInterval(function() {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateDisplayedImage();
+         }, 2000);
+    }
+
+    function stopSlideshow() {
+         clearInterval(interval);
+    }
+
+    function updateDisplayedImage() {
+         var overlayImg = document.getElementById('overlay-img');
+         overlayImg.src = images[currentIndex];
+    }
+
+    function openOverlay(imageSrc) {
+         var overlay = document.getElementById('overlay');
+         var overlayImg = document.getElementById('overlay-img');
+         overlayImg.src = imageSrc;
+         overlay.style.display = 'flex';
+         stopSlideshow();
+    }
+
+    function closeOverlay() {
+         var overlay = document.getElementById('overlay');
+         overlay.style.display = 'none';
+         startSlideshow();
+    }
+
+    startSlideshow();
+</script>
+</body>
+</html>
+

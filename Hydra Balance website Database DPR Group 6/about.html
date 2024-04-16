@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmetic Store</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body>
+    <header>
+       <div class="heading">
+	<h1>Hydra Balance</h1>
+       </div>    	
+	
+       <div class="navigation">
+	 <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>			
+                <li><a href="about.html" class="active">About Us</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+    	</nav>
+       </div>
+
+       <div class="logo">
+	<img src="logo.jpg" alt="Hydra Balance Logo" id="logo">
+       </div>    
+</header>
+<main id="products">    	
+        <div class="product">
+            <h3>Hydra Balance was founded in 2024 by Palesa Ramoreki</h3>
+	    <p>A dermatologist based in Maseru, Lesotho. “Most of my patients’ skin get irritated by sun burn 
+	       in summer and causes them to have major skin complications such as hyper-pigmentation.”
+	    </p>
+	    <p> 
+	       She further stated that some patients’ skin gets dry in cold weather conditions and
+	       it gets worse in cold weather conditions thus it gets worse in winter and because it dries 
+	       up they suffer from eczema and peeling skin
+	    </p>
+	    <p> “So I thought to bring them a doctor in a cabinet 
+	       by producing the miracle working serum to
+	       assist them in balancing their skin’s hydration during cold and hot season,” she said.
+	    </p>
+        </div>
+
+        <div class="product">
+            <div id="overlay" class="overlay" onclick="closeOverlay()">
+               <img id="overlay-img" src="" alt="">
+            </div>
+	    <h4>Employees</h4>
+	    <h3>hydrabalance@gmail.com</h3>
+    	    <h4>+266 22432586</h4>
+        </div>
+
+	<div class="product">
+            <h3>The science behind hydra balance facial serum</h3>
+	    <p>At the core of this serum lies a cautiously organized blend of powerful elements that
+	       work in harmony to nourish and restore your skin.</p>
+	    <p> Hydra Balance serum is an intense
+	       skin treatment packed with powerful ingredients that penetrate deeper into the skin layers
+	       to tackle specific problems associated with the skin, such as sun damage, hyperpigmentation, 
+	       eczema and peeling skin.</p>
+	    <p>Hydra Balance serum is efficient in penetrating the skin and giving 
+	       the skin higher bioavailability with the aid of the delivery system that is ideal for a radiant
+	       healthy skin because of the antioxidant and antimicrobial properties.
+	    </p>
+        </div>
+</main>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+<script>
+        var images = ["boity.jpg", "kani.jpg", "mpho.jpg", "ffff.jpg", "jhjk.jpg",
+		      "nhekeleng.jpg", "palesa.jpg"];
+        var currentIndex = 0;
+        var interval;
+
+        function startSlideshow() {
+            interval = setInterval(function() {
+                currentIndex = (currentIndex + 1) % images.length;
+                updateDisplayedImage();
+            }, 2000);
+        }
+
+        function stopSlideshow() {
+            clearInterval(interval);
+        }
+
+        function updateDisplayedImage() {
+            var overlayImg = document.getElementById('overlay-img');
+            overlayImg.src = images[currentIndex];
+        }
+
+        function openOverlay(imageSrc) {
+            var overlay = document.getElementById('overlay');
+            var overlayImg = document.getElementById('overlay-img');
+            overlayImg.src = imageSrc;
+            overlay.style.display = 'flex';
+            stopSlideshow();
+        }
+
+        function closeOverlay() {
+            var overlay = document.getElementById('overlay');
+            overlay.style.display = 'none';
+            startSlideshow();
+        }
+        startSlideshow();
+</script>
+</body>
+</html>
